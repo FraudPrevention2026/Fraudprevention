@@ -420,29 +420,29 @@ function showResult() {
       ${result.message}
     </div>
 
-    <button
-      class="retry-btn learn-btn"
-      onclick="window.open(
-        'https://www.police.pref.osaka.lg.jp/seikatsu/tokusyusagi/8083.html',
-        '_blank'
-      )"
-    >
-      詐欺について学ぶ
-    </button>
+<button
+  class="retry-btn"
+  onclick="restartGame()"
+>
+  🔄 もう一度診断する
+</button>
 
-    <button
-      class="retry-btn"
-      onclick="restartGame()"
-    >
-      もう一度診断する
-    </button>
+<a
+  class="summary-btn"
+  href="https://fraudprevention2026.github.io/summary/"
+>
+  🏠 ゲーム一覧に戻る
+</a>
 
-    <a
-      class="summary-btn"
-      href="https://fraudprevention2026.github.io/summary/"
-    >
-      🏠 ゲーム一覧に戻る
-    </a>
+<button
+  class="retry-btn learn-btn"
+  onclick="window.open(
+    'https://www.police.pref.osaka.lg.jp/seikatsu/tokusyusagi/8083.html',
+    '_blank'
+  )"
+>
+  🚨 詐欺について学ぶ
+</button>
 
   `;
 }
