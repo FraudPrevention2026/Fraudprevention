@@ -160,7 +160,6 @@ function showResult() {
     <p class="method-note">配点はゲーム用の暫定方式です。消費者庁が公式に定めた採点基準ではなく、合計点と被害発生確率の関係も検証されていません。</p>
     <div class="result-buttons">
       <button class="primary-btn" id="retryBtn" type="button">🔄 もう一度診断する</button>
-      <a class="secondary-btn" href="https://fraudprevention2026.github.io/summary/">🏠 ゲーム一覧に戻る</a>
       <a class="secondary-btn" href="https://www.police.pref.osaka.lg.jp/seikatsu/tokusyusagi/8083.html" target="_blank" rel="noopener noreferrer">🚨 詐欺について学ぶ</a>
     </div>
   `;
