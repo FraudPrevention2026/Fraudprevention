@@ -2,90 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <title>詐欺耐性診断ゲーム</title>
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8b5cf6" />
+  <title>詐欺対策セルフチェック</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <div class="app">
-
-    <div class="progress-area">
-
-      <div
-        class="progress-text"
-        id="progressText"
-      >
-        1 / 24
-      </div>
-
-      <div class="progress-bar">
-
-        <div
-          class="progress-fill"
-          id="progressFill"
-        ></div>
-
-      </div>
-
+  <main class="app">
+    <div class="progress-area" id="progressArea">
+      <div class="progress-text" id="progressText">1 / 9</div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
     </div>
 
-
-    <div
-      class="card fade"
-      id="card"
-    >
-
-      <div
-        class="question-number"
-        id="questionNumber"
-      >
-        QUESTION 1
-      </div>
-
-
-      <div
-        class="question-text"
-        id="questionText"
-      >
-        レストランでは最初に目に入ったメニューを選びがち？
-      </div>
-
-
-      <div class="button-group">
-
-        <button
-          class="answer-btn yes-btn"
-          id="yesBtn"
-        >
-          はい
-        </button>
-
-
-        <button
-          class="answer-btn no-btn"
-          id="noBtn"
-        >
-          いいえ
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
+    <section class="card fade" id="card" aria-live="polite">
+      <div class="intro-kicker">SCAM PREVENTION CHECK</div>
+      <h1 class="intro-title">詐欺対策<br>セルフチェック</h1>
+      <p class="intro-copy">9つの質問に答えて、自分の行動傾向と対策のヒントを確認しよう。</p>
+      <p class="intro-note">これは被害に遭う確率を予測する診断ではありません。どんな人でも、状況によって詐欺に巻き込まれる可能性があります。</p>
+      <button class="primary-btn" id="startBtn" type="button">診断を始める</button>
+    </section>
+  </main>
   <script src="script.js"></script>
-
 </body>
 </html>
